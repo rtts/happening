@@ -1,0 +1,133 @@
+$max-width: 1000px;
+
+body {
+  width: $max-width;
+  margin: 0 auto;
+  padding: 0;
+  font-family: sans;
+  text-align: center;
+  padding-bottom: 5em;
+  background: url('/static/background_tile.jpg');
+}
+
+section {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  img {
+    width: 100%;
+  }
+}
+
+section:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 200px;
+  bottom: -250px;
+  height: 400px;
+  width: 359px;
+  background: url('/static/stripes.png');
+  z-index: -1000;
+}
+
+section.logo {
+  padding-top: 50px;
+}
+
+section.facebook {
+  width: 38%;
+  text-align: right;
+  margin-top: 12px;
+  margin-bottom: 18px;
+  padding-left: 280px;
+}
+section.facebook:after {
+  display: none;
+}
+
+section.photo {
+  width: 85%;
+  background: url('/static/photo.png') no-repeat;
+  background-size: 100% 100%;
+  padding: 90px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  div {
+    position: relative;
+    img {
+      width: 100%;
+      display: block;
+    }
+    div {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      font-size: 1.25em;
+    }
+  }
+}
+section.photo:after {
+  left: 380px;
+}
+
+section.header, section.text {
+  width: 85%;
+  left: -10px;
+  padding: 90px;
+  padding-left: 50px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+  text-align: left;
+  color: white;
+}
+
+section.text {
+  left: 20px;
+  background: url('/static/text.png') no-repeat;
+  background-size: 100% 100%;
+  padding-left: 90px;
+}
+
+section.header {
+  background: url('/static/header.png') no-repeat;
+  background-size: 100% 100%;
+  p {
+    color: white;
+    font-size: 80px;
+    font-family: Arial Narrow, Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+section.header:after{
+  bottom: -200px;
+}
+
+section.tickets {
+  margin-top: 0;
+  top: -50px;
+}
+section.tickets:after {
+  left: 400px;
+}
+
+section.video {
+  iframe {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
+}
+
+a.editlink, a.addlink {
+  background: white;
+  color: red;
+  padding: .5em;
+}
+a.editlink {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

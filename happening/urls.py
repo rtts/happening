@@ -10,3 +10,9 @@ urlpatterns = [
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+admin.site.site_title = 'The Happening CMS'
+admin.site.site_header = 'The Happening CMS'
+admin.site.site_url = None
+admin.site.index_title = 'Overzicht'
+

@@ -1,5 +1,48 @@
 {% extends 'base.html' %}
+{% load static %}
+{% load embed_video_tags %}
 
 {% block content %}
-  Hello, world!
+
+  <section class="logo">
+    <img src="{% static 'logo.png' %}">
+  </section>
+
+  <section class="facebook">
+    <a target="_blank" href="https://www.facebook.com/happeningyouth/"><img src="{% static 'facebook.png' %}"></a>
+  </section>
+
+  {% for el in elements %}
+    <section class="{{el.type}}">
+      {% if el.type == 'photo' %}
+        <div>
+          <img src="{{el.image.url}}">
+          <div>
+            {{el.text|safe}}
+          </div>
+        </div>
+      {% elif el.type == 'video' %}
+        {% video el.video '800x600' %}
+      {% elif el.type == 'text' or el.type == 'header' %}
+        <div>
+          {% if el.image %}
+            <img src="{{el.image.url}}">
+          {% endif %}
+          {{el.text|safe}}
+        </div>
+      {% elif el.type == 'tickets' %}
+        <a target="_blank" href="https://shop.ikbenaanwezig.nl/tickets/event/happening-"><img src="{% static 'tickets.png' %}"></a>
+      {% endif %}
+      {% if request.user.is_authenticated %}
+        <a class="editlink" href="{% url 'admin:festival_element_change' el.pk %}">bewerk dit element</a>
+      {% endif %}
+    </section>
+  {% endfor %}
+
+  {% if request.user.is_authenticated %}
+    <p>
+      <a class="addlink" href="{% url 'admin:festival_element_add' %}">voeg nog een element toe</a>
+    </p>
+  {% endif %}
+
 {% endblock %}

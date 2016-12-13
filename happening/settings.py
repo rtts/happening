@@ -6,7 +6,7 @@ ALLOWED_HOSTS = ['happening.created.today']
 SECRET_KEY = 'zfmxng7na*o7ky0frfim9c2c6%(!9zf$@^t^mmy)8mx+_)dx44'
 ROOT_URLCONF = 'happening.urls'
 WSGI_APPLICATION = 'happening.wsgi.application'
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'nl'
 TIME_ZONE = 'Europe/Amsterdam'
 USE_I18N = True
 USE_L10N = True
@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_cleanup',
     'ckeditor',
+    'embed_video',
     'festival',
 ]
 
