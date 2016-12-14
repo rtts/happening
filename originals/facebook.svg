@@ -29,9 +29,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="1200.7652"
-     inkscape:cy="336.32511"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="1056.9977"
+     inkscape:cy="383.15502"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -39,8 +39,8 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1076"
+     inkscape:window-width="2560"
+     inkscape:window-height="1436"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0" />
@@ -52,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -61,13 +61,16 @@
      id="layer2"
      inkscape:label="Layer 2">
     <rect
-       style="opacity:0.87000002;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4215"
        width="1722.8572"
        height="320"
        x="148.57143"
        y="291.78571"
-       ry="5.9328398e-05" />
+       ry="5.9328398e-05"
+       inkscape:export-filename="/home/jj/projects/happening/happening/static/facebook.png"
+       inkscape:export-xdpi="25"
+       inkscape:export-ydpi="25" />
   </g>
   <g
      inkscape:label="Layer 1"
@@ -75,13 +78,13 @@
      id="layer1"
      transform="translate(96.339287,-467.89792)">
     <image
-       sodipodi:absref="/home/jj/projects/happening/originals/projects/happening/originals/facebook.png"
-       xlink:href="projects/happening/originals/facebook.png"
-       width="1941.25"
-       height="837.5"
-       preserveAspectRatio="none"
-       id="image4211"
+       sodipodi:absref="/home/jj/projects/happening/originals/facebook.png"
+       xlink:href="facebook.png"
+       y="467.89792"
        x="-96.339287"
-       y="467.89792" />
+       id="image4211"
+       preserveAspectRatio="none"
+       height="837.5"
+       width="1941.25" />
   </g>
 </svg>
