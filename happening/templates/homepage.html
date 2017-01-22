@@ -16,7 +16,11 @@
     <section class="{{el.type}}">
       {% if el.type == 'photo' %}
         <div>
-          <img src="{{el.image.url}}">
+          {% if el.url %}
+            <a href="{{el.url}}" target="_blank"><img src="{{el.image.url}}"></a>
+          {% else %}
+            <img src="{{el.image.url}}">
+          {% endif %}
           <div>
             {{el.text|safe}}
           </div>
