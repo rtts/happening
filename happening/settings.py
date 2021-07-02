@@ -2,7 +2,7 @@ import os
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 DEBUG = True
-ALLOWED_HOSTS = ['happening.created.today']
+ALLOWED_HOSTS = ['*']
 SECRET_KEY = 'zfmxng7na*o7ky0frfim9c2c6%(!9zf$@^t^mmy)8mx+_)dx44'
 ROOT_URLCONF = 'happening.urls'
 WSGI_APPLICATION = 'happening.wsgi.application'
